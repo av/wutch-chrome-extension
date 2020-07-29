@@ -1,6 +1,6 @@
 {
   "name": "Wutch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wutch.net allows you to track any value on the Web.",
   "permissions": [
     "activeTab"

@@ -4,6 +4,4 @@ function startHighlighter() {
   });
 }
 
-chrome.runtime.onInstalled.addListener(() => {
-  chrome.browserAction.onClicked.addListener(startHighlighter);
-});
+chrome.browserAction.onClicked.addListener(startHighlighter);
