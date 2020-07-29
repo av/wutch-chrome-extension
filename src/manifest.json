@@ -1,11 +1,14 @@
 {
   "name": "Wutch",
   "version": "1.0.0",
-  "version_name": "1.0 beta",
   "description": "Wutch.net allows you to track any value on the Web.",
-  "permissions": ["activeTab"],
+  "permissions": [
+    "activeTab"
+  ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
   "manifest_version": 2,
