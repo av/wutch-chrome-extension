@@ -1,0 +1,22 @@
+{
+  "name": "wutch-chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for Wutch",
+  "private": true,
+  "dependencies": {
+    "@medv/finder": "^2.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.4.3"
+  },
+  "scripts": {
+    "dev": "parcel watch --no-hmr --no-source-maps ./src/background.js ./src/startHighlighter.js",
+    "build": "rm -rf ./dist && parcel build ./src/background.js ./src/startHighlighter.js",
+    "zip": "zip -r ./dist/wutch.zip ./dist"
+  },
+  "staticFiles": {
+    "staticPath": "src",
+    "excludeGlob": "**/*.js"
+  }
+}
